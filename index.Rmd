@@ -402,6 +402,7 @@ class: top
 * When talking about groups of people, use the language accepted by the individual or group
 * Use matter-of-fact language about disability (e.g. blind, deaf, autistic)
 	* Avoid euphemisms ("____ challenged", "special")
+    * [I'm Not Your Inspiration, Thank You Very Much](https://www.youtube.com/watch?v=8K9Gg164Bsw) TED talk by Stella Young	
 	* Avoid portraying us as inherently "needy." The *community needs* to be accessible.
 
 ---
