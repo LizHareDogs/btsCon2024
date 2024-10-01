@@ -165,9 +165,14 @@ class: middle, center
 
 ---
 
+class: middle, center
+
 ### What does 'accessibility mean?
 
-class: top
+---
+
+
+
 
 ### The Turing Way
 
@@ -235,7 +240,7 @@ class: middle, center
 
 
 
---
+---
 
 class: top
 
