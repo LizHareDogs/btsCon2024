@@ -1,6 +1,6 @@
 ---
 title: "I'd Rather Be Talking About Science: Advocating for Inclusion and Accessibility in  Open Science Communities"
-subtitle: "BTScon 2024"
+subtitle: "Big Team Science Conference 2024"
 authors: "Liz Hare, PhD"
 institute: ""
 date: "`r Sys.Date()`"
@@ -25,7 +25,7 @@ meta() %>%
     generator = "xaringan and remark.js"
   ) %>% 
   # GitHub repo housing the slides for the talk
-  meta_name("github-repo" = "LizHareDogs/ConferenceTalkRepo") %>%
+  meta_name("github-repo" = "LizHareDogs/btsCon2024") %>%
   # metadata for the social card that appears when you share the link on social media
   meta_social(
     title = "BTScon 2024 | Liz Hare, PhD",
@@ -33,10 +33,8 @@ meta() %>%
     image = "coverImageSlide.png",
     image_alt = "",
     og_type = "website",
-    og_author = "Liz Hare",
-    twitter_card_type = "summary_large_image",
-    twitter_creator = "@DogGeneticsLLC"
-  )
+    og_author = "Liz Hare")
+  
 ```
 
 ```{r xaringanthemer, echo=FALSE, warning=FALSE}
@@ -78,7 +76,7 @@ style_duo_accent_inverse(
 )
 ```
 
-```{r xaringanExtra, echo=FALSE, warning=FALSE}
+```{r xaringanExtra, echo=FALSE, warning=FALSE, message=FALSE}
 library(xaringanExtra)
 
 # specifying xaringanExtra features
@@ -114,213 +112,310 @@ knitr::opts_chunk$set(collapse = TRUE,
 
 
 
-class: bottom, title
+class: middle, title
 background-image: url(img/ben2.jpg)
 background-position: 95% 10%
 background-size: 200px
 
 <!-- this slide has the Dog Genetics, LLC logo in the top right corner, added using the "background" image classes above. The text begins on the bottom left corner of the slide -->
 
-# `r rmarkdown::metadata$title`
-## `r rmarkdown::metadata$subtitle`
+### `r rmarkdown::metadata$title`
+--- 
 
-### `r rmarkdown::metadata$author`<br>@DogGeneticsLLC `r fa("twitter", a11y="sem")`
+.pull-left[
+#### `r rmarkdown::metadata$subtitle`
+]
+
+.pull-right[
+#### `r rmarkdown::metadata$author` 
+<br> [`r fa("github", a11y="sem")` @LizHareDogs](https://github.com/LizHareDogs)<br>
+[`r fa("mastodon", a11y="sem")` @LizHare](https://fosstodon.org/@lizhare) <br>
+[`r fa("envelope", a11y="sem")` LizHare@DogGenetics.com](mailto:LizHare@DogGenetics.com)
+]
+
 
 ---
+
+### Why would I rather talk about science?
+
+* Dog science is way more interesting to me
+* Inclusion is often an uncomfortable topic for an audience
+* Sometimes I have to confront people about their biases even more than in regular life
+* I *don't get paid* for most of this work.
+
+
+---
+
+### Some cringey stereotypes 
+
+Cultural stories we tell about people who advocate for inclusion:
+
+* One-dimensional
+* Unqualified 
+* Overentitled 
+* Attention-seeking
+
+---
+
 class: middle, center
 
-<img style="border-radius: 50%;" 
-src="img/Profile_LH.jpg"
-alt=""
-width="250px"
-/>
+### No Advocacy = No Progress
 
-# `r rmarkdown::metadata$author` 
 
-[`r fa("link", a11y="sem")` doggenetics.com](http://doggenetics.com/)<br>
-[`r fa("twitter", a11y="sem")` @DogGeneticsLLC](https://twitter.com/DogGeneticsLLC)<br>
-[`r fa("github", a11y="sem")` @LizHareDogs](https://github.com/LizHareDogs)<br>
-[`r fa("envelope", a11y="sem")` LizHare@DogGenetics.com](mailto:LizHare@DogGenetics.com)
-
-???
-Hello! My name is Liz Hare and I'm a Canine Genetics and Genomics Consultant.
-
-This slide uses:
-- the `inverse`, `middle`, and `center` slide classes
-- an image inserted with html
 
 ---
-background-image: url(img/avahi-cleesei.jpg)
-background-position: 150%, 50%
-background-size: contain
+
+### What does 'accessibility mean?
+
+class: top
+
+### The Turing Way
 
 .pull-left[
-# The Avahi cleesei lemur
+[The Turing Way](https://book.the-turing-way.org) is an always-evolving, online book and community with guides to open science topics:
+* Project design
+* Reproducibility
+* Collaboration
+* Communication
+* Ethical research
+]
 
-> A species of woolly lemur native to western Madagascar, [with] brown skin with white regions on the rear and inside of the thighs and has a short damp nose, large plate eyes, and ears which hardly stand out from the skin.
+.pull-right[
+``` {r, fig1, eval=TRUE, echo=FALSE, fig.alt="The Turing Way project is illustrated as a road or path with shops for different data science skills, drawn in a blue, yellow, and black color scheme. A person is holding a shopping cart full of charts and graphs, pushing on a path that splits down five paths that represent The Turing Way guides: 	Collaboration, Project Design, Reproducibility, Ethnics, and Communication & Outreach. People holding shopping bags and pushing carts are going between the different guides. The path is pointing towards a sun in the shape of a graph, and under it reads the phrase 'Too Easy Not to Do'. ."}
+knitr::include_graphics("img/turing-way-pathways.jpg")
+```
+]
 
-
-.footnote[
-- Original source: [Bemahara woolly lemur | Wikipedia](https://en.wikipedia.org/wiki/Bemaraha_woolly_lemur)
-- Illustration by [Rachel Hudson](https://lemur.duke.edu/100-lemurs/)
-] <!--end of footnote-->
-
-] <!--end of pull left -->
-
-???
-This slide uses:
-- a background image
-- the `.pull-left[]` class
-- a horizontal bar
-- the `.footnote[]` class
-- bullet list with `*`
-- quotes with `>`
----
-
-.left-column[
-# Making lists
-] <!--end of left column -->
-
-.right-column[
-Some facts about **lemurs**
-
-1. Lemurs are considered _living fossils_ because they provide key clues about primate evolution
-
-1. Lemurs are endemic to only Madagascar
-
-1. 95% of lemur species are at risk of extinction
-
-
-.footnote[
-----
-Original source: [Duke Lemur Center](https://lemur.duke.edu/protect/overview-madagascar-conservation-programs/)
-] <!--end of footnote-->
-
-] <!--end of right column -->
-
-???
-This slide uses:
-- numbered list with `1.`
-- a horizontal bar
-- the `.footnote[]` class
+What better place to help open science communities learn about practices for inclusion and accessibility?
 
 ---
-# Inserting images
+
+### The Turing Way Accessibility Definition
+
+* Accessibility policy in development
+* Ddiscussion about what accessibility means in an open science community of practice
+* Share your insight and suggestions in [this GitHub issue](https://github.com/the-turing-way/the-turing-way/issues/3145)
+---
+
+
+### The Turing Way Accessibility Policy in Words
+
+> a set of community-wide, behavioural, social, and technical decisions that can be taken to ensure that all are welcome and are able to enter and participate in research, data-driven processes, communities and events despite any barriers for access.
+
+> While accessibility is commonly understood with respect to disability, we – meaning _The Turing Way_ community – define accessibility as giving access to everyone, with specific attention given to ensuring proper access for groups of people that encounter different barriers for participation. Barriers may be anything related to, including, and extending beyond the following...
+
+---
+
+### The Turing Way Accessibility Policy Applies to
+
 
 .pull-left[
+* Age
+* Disability
+* Ethnicity and race
+* Family
+* Language (written and/or spoken)
+* Geography
+]
 
-### Lemurs are endemic to only Madagascar
+.pull-right[
+* Nationality
+* Religion, faith and belief
+* Sex and gender
+* Sexual orientation
+* Socioeconomic status
+* Technical or disciplinary background
+]
 
-.footnote[
-Image from [Odyssey Travels](https://www.odyssey-travels.com/site/assets/maps/positive/madagascar.png)
-] <!--end of footnote -->
+---
 
-] <!--end of pull left-->
+class: middle, center
+
+### How do we implement inclusion?
+
+
+
+--
+
+class: top
+
+### Ten Simple Rules to Host an Inclusive Conference
+
+.pull-left[
+[article](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010164) 
+published after organizing [UseR!2021](https://user2021.r-project.org).
+
+These rules can be applied more broadly to open science communities where people collaborate synchronously and asynchronously.
+]
 
 .pull-right[
 
-<!-- the image below is inserted using simple Markdown but I don't recommend inserting this way because you don't have control over the size of the image. In this case it fits the width of the "pull right" container just fine but the bottom runs off of the bottom edge of the slide. Using knitr::include_graphics() gives us much more control -->
-
-![Illustrated map of Madagascar with the Bemahara National Park highlighted on the Western-Central region of the island](img/madagascar.png)
-
-] <!--end of pull right -->
-
-???
-This slide uses:
-- two different heading sizes: `#` and `##`
-- an image and accompanying alternative text inserted with `![]()`
-- `.pull-left[]` and `.pull-right[]` classes
-- the `.footnote[]` class
-
----
-# Tables
-
-The `lemur_data` dataset contains life histories for a variety of lemurs housed at the [Duke Lemur Center](https://lemur.duke.edu/about/history-mission/) in North Carolina, USA.
-
-<!-- this slide includes an HTML table with knitr::kable() and it takes up the entire width of the text area of the slide and ends right above the footnote -->
-
-```{r lemur-births, echo=FALSE}
-knitr::kable(head(lemurs[,1:8],5), format = 'html')
+``` {r, fig2, eval=TRUE, echo=FALSE, fig.alt='Diagram of the 10 rules organized into 3 groups: foundation rules (Rules 1 to 3), design rules (Rules 4 to 9), and a continuity rule (Rule 10). The overall diagram depicts an arrow from left to right containing all the rules. In the left column, under the first label “Foundation,” there are 3 text boxes in light blue: “1. Vision,” “2. Safe environment,” and “3. Organizing Team.” In the middle column, under the label “Design Rules” there are 6 light green boxes with Rules “4. Counter bias,” “5. Virtual/hybrid,” “6. Accessibility,” “7. Language,” “8. Communication,” “9. Finance.” To the right, below the arrowhead labeled “Continuity,” is the 10th Rule in a light pink box “10. Pass the torch.”'}
+knitr::include_graphics("img/journal.pcbi.1010164.g001.PNG")
 ```
+]
 
-.footnote[
-Data source: [Duke Lemur Center Data | Kaggle](https://www.kaggle.com/jessemostipak/duke-lemur-center-data)
-] <!--end of footnote-->
-
-???
-This slide uses:
-- an R code chunk to produce the HTML table
-- the `.footnote[]` class
-
----
-# Highlighting code
-
-`> Inline code is differentiated by a monospace font face`
-
-You can highlight lines of code within code chunks using `#<<`. This adds a light gold background to the highlighted line of code, like to the `geom_histogram()` line in the example code chunk below:
-
-```r
-lemurs %>% filter(birth_type != "unknown") %>%
-  ggplot(aes(x = dob, fill = birth_type)) +
-  geom_histogram() +              #<<
-  minimal_theme()
-```
-
-???
-This slide uses:
-- inline code highlighting with backticks ` `` `
-- a code chunk to produce a ggplot
 
 ---
 
-<!-- this slide creates a plot with a code chunk and that takes up the entire slide area -->
+### 1. Foundation: Set a vision for diversity and inclusion
 
-```{r, eval=TRUE, echo=FALSE, fig.height=8, fig.width=14, fig.alt="Histogram of unique lemur births between 1975 and 2019 showing more births took place in captivity than in the wild, with most births concentrated between 1975 and 2000. Births in the wild peaked near 1985 at almost 300 births and again near 2012 at about 100 births. Births in captivity had a plateau between 1980 and 1985 at about 25 births"}
-lemurs %>% filter(birth_type != "unknown") %>%
-  ggplot(aes(x = dob, fill = birth_type)) +
-  geom_histogram() +
-  theme_minimal() +
-  # the following two xaringanthemer functions are only available for ggplot2, but they change the plot text and/or colors to match the xaringan theme
-  theme_xaringan() +
-  scale_xaringan_fill_discrete() 
-```
+"... some groups of people have been systematically excluded from or only partially included in academic, scientific, and professional circles. Recognizing this systematic exclusion is paramount to inclusion."
 
-???
-This slide uses:
-- a code chunk to produce a ggplot
-- code chunk option `fig.height = 8` and `fig.width = 14` to control the figure height and width
+What you can do:
+* Assess what who is excluded or marginalized in your field.
+* Decide and explain to the community what inclusion means
+* Refer back to these expectations for diversity as you plan, hold, and evaluate your event
 
 ---
-class: middle, inverse
 
-.pull-left[
-# Thank you!
+### 2. Foundation: Create a safe and welcoming environment
 
-] <!--end of pull left -->
+What this means:
+* Engage with participants you included in your vision for inclusion
+* Implement a code of conduct to support all participants
+* Encourage bystanders to actively support people in case anything unpleasant, inappropriate, or offensive happens.
 
-.pull-right[
-.right[
-<!--HTML code inserting a circular avatar of a square photo-->
-<img 
-src="img/Profile_LH.JPG" 
-width="200px" 
-alt="Profile of Liz Hare"
-style="border-radius: 50%;"/>
+---
 
-## `r rmarkdown::metadata$author`
+### 3. Foundation: Gather a diverse and inclusive organizing team
 
-<!--Inserting social media links-->
-[`r fa("link", a11y="sem")` doggenetics.com](http://doggenetics.com/)<br>
-[`r fa("twitter", a11y="sem")` @DogGeneticsLLC](https://twitter.com/DogGeneticsLLC)<br>
-[`r fa("github", a11y="sem")` @LizHareDogs](https://github.com/LizHareDogs)<br>
-[`r fa("envelope", a11y="sem")` LizHare@DogGenetics.com](mailto:LizHare@DogGenetics.com)
-] <!--end of right -->
-] <!--end of pull right -->
+"Nothing about us without us"
 
-???
-Thank you for joining me!
-You can find my contact information linked on this slide if you want to get in touch, and I'm happy to take any questions.
+Engage the expertise of people from marginalized groups to create a welcoming, barrier-free environment.
 
-This slide contains
-- `.pull-left[]` and `.pull-right[]` classes
-- `.right[]` class
+But:
+* Don't force marginalized people to work (only) on DEI-- they must be included in all aspects of planning.
+* Consider how you can compensate people who are chronically expected to do this work
+
+
+
+---
+
+### 4. Design: Consciously counteract bias in the conference program
+
+Avoid the "usual suspects!" -- invite keynotes and hosts from various backgrounds rather than repeatedly inviting the same people who usually have more privelege.
+
+Submission reviewers should be educated about bias.
+
+Consider anonymizing the submission process as much as possible.
+
+Broaden topics and activities to remove biases in favor of particular subfields.
+
+---
+
+### 5. Design: Design a strong online component
+
+Although people are traveling again, there are several reasons not to:
+
+* Environmental impact of travel
+* Expense-- only the most privileged have the opportunity to travel, so conferences become elite-only clubs
+* Many countries have discriminatory visa practices
+
+
+---
+
+### 6. Design: Make the conference accessible to people with disabilities
+
+Chicken-and-egg problem: we haven't been visible because we haven't had good access
+
+Early planning for accessibility saves time and money.
+
+Examples of accessibility practices:
+* Ensuring physical accessibility of venue and social events to wheelchair users
+* Captions
+* Platform, schedule, and website accessibility for screen reader users
+* Adding alternative text descriptions for images
+* Have an accessibility policy for talks and encourage accessible slide formats
+* Communicating on your website what accessibility practices you'll be implementing
+* Ensure the tools used for planning and organizing the conference are accessible.
+
+---
+
+### 7. Design: Make room for the linguistic diversity of your community
+
+How to beat the English bias:
+* Allow submissions and presentations in multiple languages
+* Judge submissions by the content and work rather than English proficiency
+* Hold social events in multiple languages
+
+---
+
+### 8. Design: Build an inclusive communication strategy
+
+* Use a wide variety of media (email, websites, communities of practice, and social media) to announce your conference and reach out to groups that have been excluded
+* Publish diversity statement, code of conduct, accessibility policy and related information so it can be found easily by potential participants
+* Provide a point of contact for questions about financial assistance and accessibility practices
+* Promote all speakers equally when featuring them during the conference and on social media
+
+---
+
+
+### 9. Design: Allocate adequate financial resources to support inclusion goals
+
+Budget for things like
+* Compensating organizers
+* Scholarships or reduced fees depending on socioeconomic categories
+* Accessibility-related costs like accurate captioning
+
+
+---
+
+### 10. Continuity: Make the conference part of a long term process for inclusion
+
+* Review goals for inclusiveness from Step 1 and evaluate whether they were met
+* Feedback from participants should be documented and made public so knowledge won't be lost before the next conference 
+* Based on experience and feedback, set new standards for the next conference
+
+---
+
+### The Turing Way Accessibility Working Group
+
+* Works on accessibility policy
+* Creates guides for accessible communication (Slack)
+* Adapts to using new collaboration tools across the community for increased accessibility
+* Consults on event organization, troubleshooting and suggesting accessibility practices
+* Advocates and addresses biases
+
+---
+
+class: middle, center
+
+### The social part
+
+
+---
+
+class: top
+
+### Social interaction
+
+* Focus on welcoming people without barriers
+* Remove as many barriers as you can without forcing people to disclose their status
+    * Organizers are *not the disability police*!
+	* Many disabilities and identities are not visible
+* When talking about groups of people, use the language accepted by the individual or group
+* Use matter-of-fact language about disability (e.g. blind, deaf, autistic)
+	* Avoid euphemisms ("____ challenged", "special")
+	* Avoid portraying us as inherently "needy." The *community needs* to be accessible.
+
+---
+
+### Ask questions! 
+
+* if you don't ask, you might end up excluding someone
+* Put answers where people can find them independently-- then they can focus on talking about science
+
+
+
+---
+
+
+#### Thank you! 
+
+* BTSCon organizers
+* Colleagues at The Turing Way
+* UseR!2021 Organizing Committee
+
+
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>I’d Rather Be Talking About Science: Advocating for Inclusion and Accessibility in Open Science Communities</title>
+    <meta charset="utf-8" />
+    <meta name="date" content="2024-10-01" />
+    <script src="index_files/header-attrs-2.27/header-attrs.js"></script>
+    <meta name="description" content="Presentation Title"/>
+    <meta name="generator" content="xaringan and remark.js"/>
+    <meta name="github-repo" content="LizHareDogs/btsCon2024"/>
+    <meta name="twitter:title" content="BTScon 2024 | Liz Hare, PhD"/>
+    <meta name="twitter:description" content="Presentation Title"/>
+    <meta name="twitter:url" content="slide url"/>
+    <meta name="twitter:image" content="coverImageSlide.png"/>
+    <meta name="twitter:image:alt" content=""/>
+    <meta name="twitter:card" content="summary"/>
+    <meta property="og:title" content="BTScon 2024 | Liz Hare, PhD"/>
+    <meta property="og:description" content="Presentation Title"/>
+    <meta property="og:url" content="slide url"/>
+    <meta property="og:image" content="coverImageSlide.png"/>
+    <meta property="og:image:alt" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="Liz Hare"/>
+    <link href="index_files/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="index_files/tile-view-0.2.6/tile-view.js"></script>
+    <script src="index_files/tone-13.8.34/Tone.js"></script>
+    <script src="index_files/slide-tone-0.2.6/slide-tone.js"></script>
+    <link rel="stylesheet" href="css/xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class: middle, title
+background-image: url(img/ben2.jpg)
+background-position: 95% 10%
+background-size: 200px
+
+&lt;!-- this slide has the Dog Genetics, LLC logo in the top right corner, added using the "background" image classes above. The text begins on the bottom left corner of the slide --&gt;
+
+### I'd Rather Be Talking About Science: Advocating for Inclusion and Accessibility in  Open Science Communities
+--- 
+
+.pull-left[
+#### Big Team Science Conference 2024
+]
+
+.pull-right[
+#### Liz Hare, PhD 
+&lt;br&gt; [<svg aria-label="GitHub" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><title>GitHub</title><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> @LizHareDogs](https://github.com/LizHareDogs)&lt;br&gt;
+[<svg aria-label="Mastodon" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><title>Mastodon</title><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg> @LizHare](https://fosstodon.org/@lizhare) &lt;br&gt;
+[<svg aria-label="Envelope" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><title>Envelope</title><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg> LizHare@DogGenetics.com](mailto:LizHare@DogGenetics.com)
+]
+
+
+---
+
+### Why would I rather talk about science?
+
+* Dog science is way more interesting to me
+* Inclusion is often an uncomfortable topic for an audience
+* Sometimes I have to confront people about their biases even more than in regular life
+* I *don't get paid* for most of this work.
+
+
+---
+
+### Some cringey stereotypes 
+
+Cultural stories we tell about people who advocate for inclusion:
+
+* One-dimensional
+* Unqualified 
+* Overentitled 
+* Attention-seeking
+
+---
+
+class: middle, center
+
+### No Advocacy = No Progress
+
+
+
+---
+
+### What does 'accessibility mean?
+
+class: top
+
+### The Turing Way
+
+.pull-left[
+[The Turing Way](https://book.the-turing-way.org) is an always-evolving, online book and community with guides to open science topics:
+* Project design
+* Reproducibility
+* Collaboration
+* Communication
+* Ethical research
+]
+
+.pull-right[
+&lt;img src="img/turing-way-pathways.jpg" alt="The Turing Way project is illustrated as a road or path with shops for different data science skills, drawn in a blue, yellow, and black color scheme. A person is holding a shopping cart full of charts and graphs, pushing on a path that splits down five paths that represent The Turing Way guides: 	Collaboration, Project Design, Reproducibility, Ethnics, and Communication &amp;amp; Outreach. People holding shopping bags and pushing carts are going between the different guides. The path is pointing towards a sun in the shape of a graph, and under it reads the phrase 'Too Easy Not to Do'. ." style="display: block; margin: auto;" /&gt;
+]
+
+What better place to help open science communities learn about practices for inclusion and accessibility?
+
+---
+
+### The Turing Way Accessibility Definition
+
+* Accessibility policy in development
+* Ddiscussion about what accessibility means in an open science community of practice
+* Share your insight and suggestions in [this GitHub issue](https://github.com/the-turing-way/the-turing-way/issues/3145)
+---
+
+
+### The Turing Way Accessibility Policy in Words
+
+&gt; a set of community-wide, behavioural, social, and technical decisions that can be taken to ensure that all are welcome and are able to enter and participate in research, data-driven processes, communities and events despite any barriers for access.
+
+&gt; While accessibility is commonly understood with respect to disability, we – meaning _The Turing Way_ community – define accessibility as giving access to everyone, with specific attention given to ensuring proper access for groups of people that encounter different barriers for participation. Barriers may be anything related to, including, and extending beyond the following...
+
+---
+
+### The Turing Way Accessibility Policy Applies to
+
+
+.pull-left[
+* Age
+* Disability
+* Ethnicity and race
+* Family
+* Language (written and/or spoken)
+* Geography
+]
+
+.pull-right[
+* Nationality
+* Religion, faith and belief
+* Sex and gender
+* Sexual orientation
+* Socioeconomic status
+* Technical or disciplinary background
+]
+
+---
+
+class: middle, center
+
+### How do we implement inclusion?
+
+
+
+--
+
+class: top
+
+### Ten Simple Rules to Host an Inclusive Conference
+
+.pull-left[
+[article](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010164) 
+published after organizing [UseR!2021](https://user2021.r-project.org).
+
+These rules can be applied more broadly to open science communities where people collaborate synchronously and asynchronously.
+]
+
+.pull-right[
+
+&lt;img src="img/journal.pcbi.1010164.g001.PNG" alt="Diagram of the 10 rules organized into 3 groups: foundation rules (Rules 1 to 3), design rules (Rules 4 to 9), and a continuity rule (Rule 10). The overall diagram depicts an arrow from left to right containing all the rules. In the left column, under the first label “Foundation,” there are 3 text boxes in light blue: “1. Vision,” “2. Safe environment,” and “3. Organizing Team.” In the middle column, under the label “Design Rules” there are 6 light green boxes with Rules “4. Counter bias,” “5. Virtual/hybrid,” “6. Accessibility,” “7. Language,” “8. Communication,” “9. Finance.” To the right, below the arrowhead labeled “Continuity,” is the 10th Rule in a light pink box “10. Pass the torch.”" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+### 1. Foundation: Set a vision for diversity and inclusion
+
+"... some groups of people have been systematically excluded from or only partially included in academic, scientific, and professional circles. Recognizing this systematic exclusion is paramount to inclusion."
+
+What you can do:
+* Assess what who is excluded or marginalized in your field.
+* Decide and explain to the community what inclusion means
+* Refer back to these expectations for diversity as you plan, hold, and evaluate your event
+
+---
+
+### 2. Foundation: Create a safe and welcoming environment
+
+What this means:
+* Engage with participants you included in your vision for inclusion
+* Implement a code of conduct to support all participants
+* Encourage bystanders to actively support people in case anything unpleasant, inappropriate, or offensive happens.
+
+---
+
+### 3. Foundation: Gather a diverse and inclusive organizing team
+
+"Nothing about us without us"
+
+Engage the expertise of people from marginalized groups to create a welcoming, barrier-free environment.
+
+But:
+* Don't force marginalized people to work (only) on DEI-- they must be included in all aspects of planning.
+* Consider how you can compensate people who are chronically expected to do this work
+
+
+
+---
+
+### 4. Design: Consciously counteract bias in the conference program
+
+Avoid the "usual suspects!" -- invite keynotes and hosts from various backgrounds rather than repeatedly inviting the same people who usually have more privelege.
+
+Submission reviewers should be educated about bias.
+
+Consider anonymizing the submission process as much as possible.
+
+Broaden topics and activities to remove biases in favor of particular subfields.
+
+---
+
+### 5. Design: Design a strong online component
+
+Although people are traveling again, there are several reasons not to:
+
+* Environmental impact of travel
+* Expense-- only the most privileged have the opportunity to travel, so conferences become elite-only clubs
+* Many countries have discriminatory visa practices
+
+
+---
+
+### 6. Design: Make the conference accessible to people with disabilities
+
+Chicken-and-egg problem: we haven't been visible because we haven't had good access
+
+Early planning for accessibility saves time and money.
+
+Examples of accessibility practices:
+* Ensuring physical accessibility of venue and social events to wheelchair users
+* Captions
+* Platform, schedule, and website accessibility for screen reader users
+* Adding alternative text descriptions for images
+* Have an accessibility policy for talks and encourage accessible slide formats
+* Communicating on your website what accessibility practices you'll be implementing
+* Ensure the tools used for planning and organizing the conference are accessible.
+
+---
+
+### 7. Design: Make room for the linguistic diversity of your community
+
+How to beat the English bias:
+* Allow submissions and presentations in multiple languages
+* Judge submissions by the content and work rather than English proficiency
+* Hold social events in multiple languages
+
+---
+
+### 8. Design: Build an inclusive communication strategy
+
+* Use a wide variety of media (email, websites, communities of practice, and social media) to announce your conference and reach out to groups that have been excluded
+* Publish diversity statement, code of conduct, accessibility policy and related information so it can be found easily by potential participants
+* Provide a point of contact for questions about financial assistance and accessibility practices
+* Promote all speakers equally when featuring them during the conference and on social media
+
+---
+
+
+### 9. Design: Allocate adequate financial resources to support inclusion goals
+
+Budget for things like
+* Compensating organizers
+* Scholarships or reduced fees depending on socioeconomic categories
+* Accessibility-related costs like accurate captioning
+
+
+---
+
+### 10. Continuity: Make the conference part of a long term process for inclusion
+
+* Review goals for inclusiveness from Step 1 and evaluate whether they were met
+* Feedback from participants should be documented and made public so knowledge won't be lost before the next conference 
+* Based on experience and feedback, set new standards for the next conference
+
+---
+
+### The Turing Way Accessibility Working Group
+
+* Works on accessibility policy
+* Creates guides for accessible communication (Slack)
+* Adapts to using new collaboration tools across the community for increased accessibility
+* Consults on event organization, troubleshooting and suggesting accessibility practices
+* Advocates and addresses biases
+
+---
+
+class: middle, center
+
+### The social part
+
+
+---
+
+class: top
+
+### Social interaction
+
+* Focus on welcoming people without barriers
+* Remove as many barriers as you can without forcing people to disclose their status
+    * Organizers are *not the disability police*!
+	* Many disabilities and identities are not visible
+* When talking about groups of people, use the language accepted by the individual or group
+* Use matter-of-fact language about disability (e.g. blind, deaf, autistic)
+	* Avoid euphemisms ("____ challenged", "special")
+	* Avoid portraying us as inherently "needy." The *community needs* to be accessible.
+
+---
+
+### Ask questions! 
+
+* if you don't ask, you might end up excluding someone
+* Put answers where people can find them independently-- then they can focus on talking about science
+
+
+
+---
+
+
+#### Thank you! 
+
+* BTSCon organizers
+* Colleagues at The Turing Way
+* UseR!2021 Organizing Committee
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
