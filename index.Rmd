@@ -113,11 +113,8 @@ knitr::opts_chunk$set(collapse = TRUE,
 
 
 class: middle, title
-background-image: url(img/ben2.jpg)
-background-position: 95% 10%
-background-size: 200px
 
-<!-- this slide has the Dog Genetics, LLC logo in the top right corner, added using the "background" image classes above. The text begins on the bottom left corner of the slide -->
+
 
 ### `r rmarkdown::metadata$title`
 --- 
@@ -167,7 +164,7 @@ class: middle, center
 
 class: middle, center
 
-### What does 'accessibility mean?
+### What does 'accessibility' mean?
 
 ---
 
@@ -198,7 +195,7 @@ What better place to help open science communities learn about practices for inc
 ### The Turing Way Accessibility Definition
 
 * Accessibility policy in development
-* Ddiscussion about what accessibility means in an open science community of practice
+* Discussion about what accessibility means in an open science community of practice
 * Share your insight and suggestions in [this GitHub issue](https://github.com/the-turing-way/the-turing-way/issues/3145)
 ---
 
@@ -410,7 +407,7 @@ class: top
 ### Ask questions! 
 
 * if you don't ask, you might end up excluding someone
-* Put answers where people can find them independently-- then they can focus on talking about science
+* Put answers where people can find them independently-- then they can focus on *talking about science*
 
 
 
